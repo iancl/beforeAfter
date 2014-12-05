@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>before After</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta content="True" name="HandheldFriendly"/>
+	<meta content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+</head>
+<body>
+<section id="container">
+	<div id="beforeContainer"></div>
+	<div id="afterContainer"></div>
+</section>
+<section id="loadingOverlay" class="on show"></section>
+<script src="config.js"></script>
+<script src="js/script.min.js"></script>
+<!-- to init the component -->
+<script>
+	
+	// call the APP.load() method
+	window.addEventListener("load", function(){
+		APP.load();
+	});
+
+</script>
+</body>
+</html>

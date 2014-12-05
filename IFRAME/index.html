@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IFRAMED Before&amp;After</title>
+	<style type="text/css">
+	iframe, button{ margin:0 auto; display: block; }
+	button{ width: 200px; height: 60px; font-weight: bold; display: none;}
+	</style>
+</head>
+<body>
+<iframe id="component" src="v_0_1_2/index.html" width="733" height="487"></iframe>
+<button>CHAGE IMG</button>
+<script>
+
+// query iframe
+var iframe = document.querySelector("#component"),
+	button = document.querySelector("button");
+
+// when iframe is ready
+function init(){
+
+	// load/reload component
+	iframe.contentWindow.APP.load(); 
+	button.style.display = "block";
+}
+
+
+
+function changeBG(){
+	iframe.contentWindow.APP_CONF.images.after = "http://i.huffpost.com/gen/1735626/thumbs/o-GRUMPY-PHARRELL-facebook.jpg";
+	iframe.contentWindow.APP.reload();
+	button.style.display = "none";
+}
+
+
+button.addEventListener("click", changeBG);
+iframe.addEventListener("load", init);
+</script>
+</body>
+</html>

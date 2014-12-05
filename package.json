@@ -1,0 +1,15 @@
+{
+  "name": "beforeAfterJS",
+  "version": "0.1.0",
+  "description": "This will create a slider so you can slide to hide/reveal 2 images",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Calderon",
+  "license": "MIT",
+  "dependencies": {
+    "jshint": "^2.5.6",
+    "uglify-js": "^2.4.15",
+    "uglifycss": "0.0.9"
+  }
+}
